@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="p5.js"></script>
+  <link rel="stylesheet" type="text/css" href="inputStyle.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+
+  <!-- CONTENT -->
+  <div class="modalContent">
+
+    <span class="close">&times;</span>
+    <h2 style="color: red">INFORMATION</h2>
+    <p>This project is made by Harold Kwan.</p>
+    <p>Please select the colors as truthfully as possible so that we can collect more accurate data. Thanks!</p>
+    <p>All data is managed and saved by Google Firebase. Learn more about Google Firebase <a href="https://firebase.google.com">here</a>.</p>
+    <p>This project is inspired by the color classifier made by The Coding Train (Daniel Shiffman). You can check out his youtube channel <a href="https://www.youtube.com/user/shiffman">here</a>.</p>
+    <p style="color: red">Active contributors: SAMUEL YEUNG</p>
+
+  </div>
+
+</div>
+
+<div id="blacklistModal" class="blacklistModal">
+
+  <!-- CONTENT -->
+  <div class="blacklistModalContent">
+
+    <span class="close">&times;</span>
+    <h2 style="color: red">NOTICE TO FELLOW USER</h2>
+    <p>After reviewing our data, we have noticed that you have provided us with some untrustworthy data.
+    Therefore, you have been put on our blacklist and we have forbidden you from writing to our database.
+    If you think this is a mistake, you can submit an issue
+      <a href="https://github.com/brainstormerjr/colorClassifierDataCollection/issues">here</a>.</p>
+
+  </div>
+
+</div>
+
+
+<div id="moreMenu" class="moreMenu">
+  <a href="javascript:void(0)" class="closeMore" onclick="closeMore()">&times;</a>
+  <a href="checkIndex.html" style="white-space: nowrap">View Data</a>
+  <a href="trainIndex.html" style="white-space: nowrap">Train a Model</a>
+</div>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
+<script src="inputSketch.js"></script>
+
+
+</body>
+
+</html>

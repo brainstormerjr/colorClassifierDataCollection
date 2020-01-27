@@ -1,0 +1,172 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+canvas {
+  display: block;
+}
+
+.colorSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 20px;
+  color: red;
+  background: #d3d3d3;
+  opacity: 0.7;
+  border-radius: 10px;
+  border: none;
+}
+
+.colorSlider:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.colorSlider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  background: red;
+  border: none;
+}
+
+.colorSlider::-moz-range-thumb {
+  background: black;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.trainButton {
+  width: 300px;
+  height: 135px;
+  border: 5px solid;
+  border-color: black;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  transition-duration: 0.4s;
+  display: block;
+}
+
+.trainButton:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.trainButton:disabled,
+.trainButton[disabled]{
+  border-color: #aaaaaa;
+  color: #aaaaaa;
+}
+
+.trainButton:disabled:hover {
+  background-color: white;
+  cursor: not-allowed;
+}
+
+.moreButton {
+  background: url("more.png");
+  width: 30px;
+  height: 20px;
+}
+
+.moreButton:hover {
+  cursor: pointer;
+}
+
+.infoButton {
+  background: url("info.png");
+  width: 20px;
+  height: 20px;
+}
+
+.infoButton:hover {
+  cursor: pointer;
+}
+
+.moreMenu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.moreMenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.moreMenu a:hover {
+  color: #f1f1f1;
+}
+
+.moreMenu .closeMore {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  background-color: white;
+  margin: 15% auto;
+  padding: 40px;
+  border: 0;
+  width: 80%;
+  /*height:30%;*/
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
