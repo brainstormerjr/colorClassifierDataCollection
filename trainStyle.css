@@ -28,8 +28,11 @@ canvas {
 .colorSlider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  background: red;
+  background: black;
+  width: 20px;
+  height: 20px;
   border: none;
+  border-radius: 5px;
 }
 
 .colorSlider::-moz-range-thumb {
@@ -37,6 +40,7 @@ canvas {
   width: 20px;
   height: 20px;
   border: none;
+  border-radius: 5px;
 }
 
 .trainButton {
